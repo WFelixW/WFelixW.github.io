@@ -1,153 +1,177 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Felix | Electronics Engineer</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Felix — Electronics Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Archivo+Expanded:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <div class="container">
-        <h1>Felix</h1>
+<!-- background trace layer -->
+<svg class="board-traces" viewBox="0 0 1000 4000" preserveAspectRatio="none" aria-hidden="true">
+  <path class="trace" d="M 60 0 L 60 380 L 110 430 L 110 900" />
+  <path class="trace" d="M 940 0 L 940 600 L 890 650 L 890 1400" />
+  <path class="trace trace--alt" d="M 60 900 L 60 1500 L 30 1530 L 30 2200" />
+  <path class="trace" d="M 890 1400 L 890 2000 L 940 2050 L 940 2800" />
+  <path class="trace trace--alt" d="M 30 2200 L 30 2900 L 60 2930 L 60 3600" />
+  <circle class="via" cx="110" cy="430" r="6"/>
+  <circle class="via" cx="890" cy="650" r="6"/>
+  <circle class="via" cx="30" cy="1530" r="6"/>
+  <circle class="via" cx="940" cy="2050" r="6"/>
+  <circle class="via" cx="60" cy="2930" r="6"/>
+</svg>
 
-```
-    <p class="subtitle">
-        EEE (Smart Grid & Electric Vehicles)
-    </p>
-
-    <p class="tagline">
-        <span id="typing"></span>
-    </p>
-</div>
-```
-
+<header class="sheet-header">
+  <div class="container">
+    <div class="title-block">
+      <div class="title-block__row">
+        <span class="ref-tag">U1</span>
+        <h1>FELIX</h1>
+      </div>
+      <p class="subtitle">EEE — SMART GRID &amp; ELECTRIC VEHICLES</p>
+      <p class="tagline"><span id="typing"></span><span class="cursor">_</span></p>
+    </div>
+    <div class="title-block__specs">
+      <dl>
+        <div><dt>PKG</dt><dd>Engineering Student</dd></div>
+        <div><dt>STATUS</dt><dd>In Development</dd></div>
+        <div><dt>REV</dt><dd>2026.06</dd></div>
+      </dl>
+    </div>
+  </div>
 </header>
 
-<section class="about">
-    <div class="container">
-        <h2>About Me</h2>
-        <p>
-            I am an Electrical and Electronics Engineering student specializing in Smart Grid and Electric Vehicles.
-            My interests include embedded systems, PCB design, robotics, IoT systems, communication technologies,
-            and EV-related electronics.
-        </p>
-    </div>
+<main>
+
+<section class="sheet" id="about">
+  <div class="container">
+    <div class="sheet__label"><span class="ref-tag">R1</span><h2>About</h2></div>
+    <p class="lead">
+      I'm an Electrical and Electronics Engineering student specializing in Smart Grid
+      and Electric Vehicle systems. I build the layer between physical hardware and
+      intelligent control — embedded firmware, custom PCBs, and the communication
+      links that let machines talk to each other.
+    </p>
+    <p>
+      My focus areas: embedded systems, PCB design, robotics, IoT, communication
+      technologies, and EV-related electronics.
+    </p>
+  </div>
 </section>
 
-<section class="skills">
-    <div class="container">
-        <h2>Skills</h2>
-
-```
-    <div class="skill-grid">
-        <span>ESP32</span>
-        <span>Arduino</span>
-        <span>Embedded C</span>
-        <span>PCB Design (KiCad)</span>
-        <span>IoT Systems</span>
-        <span>GSM Communication</span>
-        <span>Python</span>
-        <span>Robotics</span>
-        <span>EV Technology</span>
-        <span>Electronics Prototyping</span>
+<section class="sheet" id="skills">
+  <div class="container">
+    <div class="sheet__label"><span class="ref-tag">R2</span><h2>Component Stack</h2></div>
+    <p class="section-note">Tools and platforms, listed like parts on a BOM.</p>
+    <div class="bom">
+      <div class="bom__row bom__row--head">
+        <span>REF</span><span>PART</span><span>CATEGORY</span>
+      </div>
+      <div class="bom__row"><span>C1</span><span>ESP32</span><span>Microcontroller</span></div>
+      <div class="bom__row"><span>C2</span><span>Arduino</span><span>Microcontroller</span></div>
+      <div class="bom__row"><span>C3</span><span>Embedded C</span><span>Firmware</span></div>
+      <div class="bom__row"><span>C4</span><span>KiCad</span><span>PCB Design</span></div>
+      <div class="bom__row"><span>C5</span><span>IoT Systems</span><span>Connectivity</span></div>
+      <div class="bom__row"><span>C6</span><span>GSM Comms</span><span>Connectivity</span></div>
+      <div class="bom__row"><span>C7</span><span>Python</span><span>Software</span></div>
+      <div class="bom__row"><span>C8</span><span>Robotics</span><span>Systems</span></div>
+      <div class="bom__row"><span>C9</span><span>EV Technology</span><span>Power Electronics</span></div>
+      <div class="bom__row"><span>C10</span><span>Prototyping</span><span>Hardware</span></div>
     </div>
-</div>
-```
-
+  </div>
 </section>
 
-<section class="projects">
-    <div class="container">
-        <h2>Featured Projects</h2>
-
-```
+<section class="sheet" id="projects">
+  <div class="container">
+    <div class="sheet__label"><span class="ref-tag">R3</span><h2>Featured Projects</h2></div>
     <div class="project-grid">
 
-        <div class="card">
-            <h3>TerraFlow</h3>
-            <p>
-                GSM-based smart irrigation system featuring ESP32 control,
-                remote valve operation and custom PCB design.
-            </p>
-
-            <a href="https://github.com/WFelixW/TerraFlow" target="_blank">
-                View Project →
-            </a>
+      <article class="card" tabindex="0">
+        <div class="card__pins" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
         </div>
-
-        <div class="card">
-            <h3>Wall-E Robot</h3>
-            <p>
-                Robotics platform featuring motion control,
-                expressive animations and future AI integration.
-            </p>
-
-            <a href="#">
-                Coming Soon
-            </a>
+        <div class="card__top">
+          <span class="ref-tag ref-tag--small">D1</span>
+          <span class="card__status">SHIPPED</span>
         </div>
+        <h3>TerraFlow</h3>
+        <p>GSM-based smart irrigation system featuring ESP32 control, remote valve operation, and a custom-designed PCB.</p>
+        <a href="https://github.com/WFelixW/TerraFlow" target="_blank" rel="noopener">View Project →</a>
+      </article>
 
-        <div class="card">
-            <h3>RoboEyes ESP32</h3>
-            <p>
-                OLED animated eye system for expressive robotic interfaces.
-            </p>
-
-            <a href="#">
-                Coming Soon
-            </a>
+      <article class="card" tabindex="0">
+        <div class="card__pins" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
         </div>
-
-        <div class="card">
-            <h3>V2V Communication</h3>
-            <p>
-                Vehicle-to-Vehicle communication system for EV applications.
-            </p>
-
-            <a href="#">
-                Coming Soon
-            </a>
+        <div class="card__top">
+          <span class="ref-tag ref-tag--small">D2</span>
+          <span class="card__status card__status--wip">IN PROGRESS</span>
         </div>
+        <h3>Wall-E Robot</h3>
+        <p>Robotics platform with motion control, expressive animation, and planned AI integration.</p>
+        <a class="card__pending">Coming Soon</a>
+      </article>
+
+      <article class="card" tabindex="0">
+        <div class="card__pins" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+        </div>
+        <div class="card__top">
+          <span class="ref-tag ref-tag--small">D3</span>
+          <span class="card__status card__status--wip">IN PROGRESS</span>
+        </div>
+        <h3>RoboEyes ESP32</h3>
+        <p>OLED-driven animated eye system for expressive robotic interfaces.</p>
+        <a class="card__pending">Coming Soon</a>
+      </article>
+
+      <article class="card" tabindex="0">
+        <div class="card__pins" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+        </div>
+        <div class="card__top">
+          <span class="ref-tag ref-tag--small">D4</span>
+          <span class="card__status card__status--wip">IN PROGRESS</span>
+        </div>
+        <h3>V2V Communication</h3>
+        <p>Vehicle-to-Vehicle communication system designed for EV applications.</p>
+        <a class="card__pending">Coming Soon</a>
+      </article>
 
     </div>
-</div>
-```
-
+  </div>
 </section>
 
-<section class="contact">
-    <div class="container">
-        <h2>Contact</h2>
-
-```
-    <p>
-        GitHub:
-        <a href="https://github.com/WFelixW" target="_blank">
-            github.com/WFelixW
-        </a>
-    </p>
-
-    <p>
-        Portfolio:
-        <a href="https://wfelixw.github.io" target="_blank">
-            wfelixw.github.io
-        </a>
-    </p>
-</div>
-```
-
+<section class="sheet" id="contact">
+  <div class="container">
+    <div class="sheet__label"><span class="ref-tag">J1</span><h2>Connector / Contact</h2></div>
+    <div class="connector">
+      <div class="connector__pin">
+        <span class="connector__pin-num">1</span>
+        <span class="connector__pin-name">GITHUB</span>
+        <a href="https://github.com/WFelixW" target="_blank" rel="noopener">github.com/WFelixW</a>
+      </div>
+      <div class="connector__pin">
+        <span class="connector__pin-num">2</span>
+        <span class="connector__pin-name">PORTFOLIO</span>
+        <a href="https://wfelixw.github.io" target="_blank" rel="noopener">wfelixw.github.io</a>
+      </div>
+    </div>
+  </div>
 </section>
+
+</main>
 
 <footer>
-    <div class="container">
-        <p>© 2026 Felix | Engineering Portfolio</p>
-    </div>
+  <div class="container">
+    <p>© 2026 Felix — Engineering Portfolio — Sheet 1 of 1</p>
+  </div>
 </footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>
