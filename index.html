@@ -6,111 +6,146 @@
 <title>Felix — Electronics Engineer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Sora:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav class="navbar">
   <div class="container navbar__inner">
-    <span class="navbar__mark">FW</span>
+    <span class="navbar__mark">Felix<span class="navbar__dot">.</span></span>
     <div class="navbar__links">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </div>
+    <a href="#contact" class="btn btn--small btn--primary">Let's Talk</a>
   </div>
 </nav>
 
 <header class="hero">
-  <div class="hero__mesh" aria-hidden="true"></div>
   <div class="container hero__inner">
-    <p class="hero__eyebrow">Electrical &amp; Electronics Engineering</p>
-    <h1 class="hero__title">
-      Felix builds the <em>bridge</em><br>between hardware and intelligence.
-    </h1>
-    <p class="hero__subtitle">
-      Smart Grid &amp; Electric Vehicle systems — embedded firmware, custom PCBs,
-      and the communication layers that let machines coordinate.
-    </p>
-    <div class="hero__cta">
-      <a href="#projects" class="btn btn--primary">View Projects</a>
-      <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+    <div class="hero__text">
+      <p class="hero__eyebrow">⚡ Electrical &amp; Electronics Engineering</p>
+      <h1 class="hero__title">Hi, I'm Felix.<br>I build <span class="highlight">smart hardware</span> for a connected grid.</h1>
+      <p class="hero__subtitle">
+        EEE student specializing in Smart Grid &amp; Electric Vehicle systems —
+        embedded firmware, custom PCBs, and the communication layers that let
+        machines coordinate.
+      </p>
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary">View Projects</a>
+        <a href="#contact" class="btn btn--outline">Get in Touch</a>
+      </div>
     </div>
-  </div>
-  <div class="hero__stats container">
-    <div class="stat">
-      <span class="stat__num" data-target="10">0</span>
-      <span class="stat__label">Core Tools</span>
-    </div>
-    <div class="stat">
-      <span class="stat__num" data-target="4">0</span>
-      <span class="stat__label">Active Projects</span>
-    </div>
-    <div class="stat">
-      <span class="stat__num" data-target="2026">0</span>
-      <span class="stat__label">Graduating</span>
+    <div class="hero__photo">
+      <!-- IMAGE SLOT 1: Profile photo, square crop, ~480x480px recommended -->
+      <div class="photo-frame photo-frame--round">
+        <span class="photo-frame__hint">Add your photo<br>(square, ~480×480px)</span>
+      </div>
+      <div class="hero__badge">🎓 Class of 2026</div>
     </div>
   </div>
 </header>
 
 <main>
 
-<section class="section" id="about">
-  <div class="container section__grid">
-    <div class="section__heading">
-      <span class="section__number">01</span>
-      <h2>About</h2>
+<section class="section section--alt" id="about">
+  <div class="container about__grid">
+    <div class="about__photo">
+      <!-- IMAGE SLOT 2: Workbench / soldering / PCB-in-hand photo, ~600x500px -->
+      <div class="photo-frame photo-frame--wide">
+        <span class="photo-frame__hint">Add a workbench / project photo<br>(landscape, ~600×500px)</span>
+      </div>
     </div>
-    <div class="section__content">
+    <div class="about__text">
+      <span class="eyebrow">About Me</span>
+      <h2>Where hardware meets intelligence</h2>
       <p class="lead">
         I'm an Electrical and Electronics Engineering student specializing in
         Smart Grid and Electric Vehicle systems.
       </p>
       <p>
-        I work at the intersection of physical hardware and intelligent control —
-        designing embedded firmware, custom PCBs, and the communication links that
-        let machines talk to each other. My focus spans embedded systems, IoT,
-        robotics, and the power electronics behind modern EVs.
+        I work at the intersection of physical hardware and intelligent
+        control — designing embedded firmware, custom PCBs, and the
+        communication links that let machines talk to each other. My focus
+        spans embedded systems, IoT, robotics, and the power electronics
+        behind modern EVs.
       </p>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="skills">
-  <div class="container section__grid">
-    <div class="section__heading">
-      <span class="section__number">02</span>
-      <h2>Skills</h2>
-    </div>
-    <div class="section__content">
-      <div class="skill-list">
-        <div class="skill-list__item"><span>ESP32</span></div>
-        <div class="skill-list__item"><span>Arduino</span></div>
-        <div class="skill-list__item"><span>Embedded C</span></div>
-        <div class="skill-list__item"><span>PCB Design — KiCad</span></div>
-        <div class="skill-list__item"><span>IoT Systems</span></div>
-        <div class="skill-list__item"><span>GSM Communication</span></div>
-        <div class="skill-list__item"><span>Python</span></div>
-        <div class="skill-list__item"><span>Robotics</span></div>
-        <div class="skill-list__item"><span>EV Technology</span></div>
-        <div class="skill-list__item"><span>Electronics Prototyping</span></div>
+      <div class="about__quickfacts">
+        <div><strong>Focus</strong><span>Smart Grid &amp; EV Systems</span></div>
+        <div><strong>Based in</strong><span>Tamil Nadu, India</span></div>
+        <div><strong>Open to</strong><span>Internships &amp; Collabs</span></div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section" id="projects">
-  <div class="container section__grid">
-    <div class="section__heading">
-      <span class="section__number">03</span>
-      <h2>Featured Projects</h2>
-    </div>
-    <div class="section__content">
-      <div class="project-grid">
+<section class="section" id="skills">
+  <div class="container">
+    <span class="eyebrow">Skills</span>
+    <h2>What I work with</h2>
+    <p class="section-intro">Hands-on proficiency across the embedded &amp; power electronics stack.</p>
 
-        <article class="project-card">
+    <div class="skill-bars">
+      <div class="skill-bar">
+        <div class="skill-bar__head"><span>ESP32 / Arduino</span><span class="skill-bar__pct">90%</span></div>
+        <div class="skill-bar__track"><div class="skill-bar__fill" data-width="90"></div></div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-bar__head"><span>Embedded C</span><span class="skill-bar__pct">85%</span></div>
+        <div class="skill-bar__track"><div class="skill-bar__fill" data-width="85"></div></div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-bar__head"><span>PCB Design — KiCad</span><span class="skill-bar__pct">80%</span></div>
+        <div class="skill-bar__track"><div class="skill-bar__fill" data-width="80"></div></div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-bar__head"><span>IoT Systems</span><span class="skill-bar__pct">80%</span></div>
+        <div class="skill-bar__track"><div class="skill-bar__fill" data-width="80"></div></div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-bar__head"><span>GSM Communication</span><span class="skill-bar__pct">75%</span></div>
+        <div class="skill-bar__track"><div class="skill-bar__fill" data-width="75"></div></div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-bar__head"><span>Python</span><span class="skill-bar__pct">70%</span></div>
+        <div class="skill-bar__track"><div class="skill-bar__fill" data-width="70"></div></div>
+      </div>
+    </div>
+
+    <div class="skill-chips">
+      <span>Robotics</span>
+      <span>EV Technology</span>
+      <span>Electronics Prototyping</span>
+      <span>V2V Communication</span>
+      <span>OLED Displays</span>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" id="projects">
+  <div class="container">
+    <span class="eyebrow">Work</span>
+    <h2>Featured Projects</h2>
+    <p class="section-intro">A mix of shipped builds and projects in active development.</p>
+
+    <!-- WIDGET: filterable project grid -->
+    <div class="filter-bar" role="tablist" aria-label="Filter projects">
+      <button class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+      <button class="filter-btn" data-filter="shipped" role="tab" aria-selected="false">Shipped</button>
+      <button class="filter-btn" data-filter="progress" role="tab" aria-selected="false">In Progress</button>
+    </div>
+
+    <div class="project-grid">
+
+      <article class="project-card" data-status="shipped">
+        <!-- IMAGE SLOT 3: TerraFlow board / irrigation setup photo, ~480x300px -->
+        <div class="photo-frame photo-frame--card">
+          <span class="photo-frame__hint">Add TerraFlow photo</span>
+        </div>
+        <div class="project-card__body">
           <div class="project-card__head">
             <h3>TerraFlow</h3>
             <span class="badge badge--live">Shipped</span>
@@ -122,9 +157,15 @@
           <a href="https://github.com/WFelixW/TerraFlow" target="_blank" rel="noopener" class="project-card__link">
             View Project <span aria-hidden="true">→</span>
           </a>
-        </article>
+        </div>
+      </article>
 
-        <article class="project-card">
+      <article class="project-card" data-status="progress">
+        <!-- IMAGE SLOT 4: Wall-E robot build photo, ~480x300px -->
+        <div class="photo-frame photo-frame--card">
+          <span class="photo-frame__hint">Add Wall-E robot photo</span>
+        </div>
+        <div class="project-card__body">
           <div class="project-card__head">
             <h3>Wall-E Robot</h3>
             <span class="badge">In Progress</span>
@@ -134,9 +175,15 @@
             <span>Robotics</span><span>Motion Control</span>
           </div>
           <span class="project-card__link project-card__link--disabled">Coming Soon</span>
-        </article>
+        </div>
+      </article>
 
-        <article class="project-card">
+      <article class="project-card" data-status="progress">
+        <!-- IMAGE SLOT 5: RoboEyes OLED demo photo/gif, ~480x300px -->
+        <div class="photo-frame photo-frame--card">
+          <span class="photo-frame__hint">Add RoboEyes photo</span>
+        </div>
+        <div class="project-card__body">
           <div class="project-card__head">
             <h3>RoboEyes ESP32</h3>
             <span class="badge">In Progress</span>
@@ -146,9 +193,15 @@
             <span>ESP32</span><span>OLED</span>
           </div>
           <span class="project-card__link project-card__link--disabled">Coming Soon</span>
-        </article>
+        </div>
+      </article>
 
-        <article class="project-card">
+      <article class="project-card" data-status="progress">
+        <!-- IMAGE SLOT 6: V2V comms setup / diagram photo, ~480x300px -->
+        <div class="photo-frame photo-frame--card">
+          <span class="photo-frame__hint">Add V2V project photo</span>
+        </div>
+        <div class="project-card__body">
           <div class="project-card__head">
             <h3>V2V Communication</h3>
             <span class="badge">In Progress</span>
@@ -158,30 +211,24 @@
             <span>EV Tech</span><span>Comms</span>
           </div>
           <span class="project-card__link project-card__link--disabled">Coming Soon</span>
-        </article>
+        </div>
+      </article>
 
-      </div>
     </div>
   </div>
 </section>
 
 <section class="section" id="contact">
-  <div class="container section__grid">
-    <div class="section__heading">
-      <span class="section__number">04</span>
-      <h2>Contact</h2>
-    </div>
-    <div class="section__content">
-      <p class="lead">Let's talk about hardware, firmware, or where the two meet.</p>
-      <div class="contact-list">
-        <a href="https://github.com/WFelixW" target="_blank" rel="noopener" class="contact-list__item">
-          <span class="contact-list__label">GitHub</span>
-          <span class="contact-list__value">github.com/WFelixW <span aria-hidden="true">→</span></span>
-        </a>
-        <a href="https://wfelixw.github.io" target="_blank" rel="noopener" class="contact-list__item">
-          <span class="contact-list__label">Portfolio</span>
-          <span class="contact-list__value">wfelixw.github.io <span aria-hidden="true">→</span></span>
-        </a>
+  <div class="container">
+    <div class="contact-box">
+      <div class="contact-box__text">
+        <span class="eyebrow eyebrow--light">Contact</span>
+        <h2>Let's build something.</h2>
+        <p>Open to internships, collaborations, and conversations about hardware, firmware, or wherever the two meet.</p>
+        <div class="hero__cta">
+          <a href="https://github.com/WFelixW" target="_blank" rel="noopener" class="btn btn--light">GitHub →</a>
+          <a href="https://wfelixw.github.io" target="_blank" rel="noopener" class="btn btn--outline-light">Portfolio Site →</a>
+        </div>
       </div>
     </div>
   </div>
