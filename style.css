@@ -284,6 +284,13 @@ a{ color:inherit; }
 .photo-frame__hint{
   max-width:200px;
 }
+.photo-frame img{
+  width:100%;
+  height:100%;
+  object-fit:fill;
+  border-radius:inherit;
+  display:block;
+}
 
 /* ===================================================
    SECTIONS
