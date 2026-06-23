@@ -6,159 +6,182 @@
 <title>Felix — Electronics Engineer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Archivo+Expanded:wght@600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Sora:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- background trace layer -->
-<svg class="board-traces" viewBox="0 0 1000 4000" preserveAspectRatio="none" aria-hidden="true">
-  <path class="trace" d="M 60 0 L 60 380 L 110 430 L 110 900" />
-  <path class="trace" d="M 940 0 L 940 600 L 890 650 L 890 1400" />
-  <path class="trace trace--alt" d="M 60 900 L 60 1500 L 30 1530 L 30 2200" />
-  <path class="trace" d="M 890 1400 L 890 2000 L 940 2050 L 940 2800" />
-  <path class="trace trace--alt" d="M 30 2200 L 30 2900 L 60 2930 L 60 3600" />
-  <circle class="via" cx="110" cy="430" r="6"/>
-  <circle class="via" cx="890" cy="650" r="6"/>
-  <circle class="via" cx="30" cy="1530" r="6"/>
-  <circle class="via" cx="940" cy="2050" r="6"/>
-  <circle class="via" cx="60" cy="2930" r="6"/>
-</svg>
-
-<header class="sheet-header">
-  <div class="container">
-    <div class="title-block">
-      <div class="title-block__row">
-        <span class="ref-tag">U1</span>
-        <h1>FELIX</h1>
-      </div>
-      <p class="subtitle">EEE — SMART GRID &amp; ELECTRIC VEHICLES</p>
-      <p class="tagline"><span id="typing"></span><span class="cursor">_</span></p>
+<nav class="navbar">
+  <div class="container navbar__inner">
+    <span class="navbar__mark">FW</span>
+    <div class="navbar__links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </div>
-    <div class="title-block__specs">
-      <dl>
-        <div><dt>PKG</dt><dd>Engineering Student</dd></div>
-        <div><dt>STATUS</dt><dd>In Development</dd></div>
-        <div><dt>REV</dt><dd>2026.06</dd></div>
-      </dl>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero__mesh" aria-hidden="true"></div>
+  <div class="container hero__inner">
+    <p class="hero__eyebrow">Electrical &amp; Electronics Engineering</p>
+    <h1 class="hero__title">
+      Felix builds the <em>bridge</em><br>between hardware and intelligence.
+    </h1>
+    <p class="hero__subtitle">
+      Smart Grid &amp; Electric Vehicle systems — embedded firmware, custom PCBs,
+      and the communication layers that let machines coordinate.
+    </p>
+    <div class="hero__cta">
+      <a href="#projects" class="btn btn--primary">View Projects</a>
+      <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+    </div>
+  </div>
+  <div class="hero__stats container">
+    <div class="stat">
+      <span class="stat__num" data-target="10">0</span>
+      <span class="stat__label">Core Tools</span>
+    </div>
+    <div class="stat">
+      <span class="stat__num" data-target="4">0</span>
+      <span class="stat__label">Active Projects</span>
+    </div>
+    <div class="stat">
+      <span class="stat__num" data-target="2026">0</span>
+      <span class="stat__label">Graduating</span>
     </div>
   </div>
 </header>
 
 <main>
 
-<section class="sheet" id="about">
-  <div class="container">
-    <div class="sheet__label"><span class="ref-tag">R1</span><h2>About</h2></div>
-    <p class="lead">
-      I'm an Electrical and Electronics Engineering student specializing in Smart Grid
-      and Electric Vehicle systems. I build the layer between physical hardware and
-      intelligent control — embedded firmware, custom PCBs, and the communication
-      links that let machines talk to each other.
-    </p>
-    <p>
-      My focus areas: embedded systems, PCB design, robotics, IoT, communication
-      technologies, and EV-related electronics.
-    </p>
-  </div>
-</section>
-
-<section class="sheet" id="skills">
-  <div class="container">
-    <div class="sheet__label"><span class="ref-tag">R2</span><h2>Component Stack</h2></div>
-    <p class="section-note">Tools and platforms, listed like parts on a BOM.</p>
-    <div class="bom">
-      <div class="bom__row bom__row--head">
-        <span>REF</span><span>PART</span><span>CATEGORY</span>
-      </div>
-      <div class="bom__row"><span>C1</span><span>ESP32</span><span>Microcontroller</span></div>
-      <div class="bom__row"><span>C2</span><span>Arduino</span><span>Microcontroller</span></div>
-      <div class="bom__row"><span>C3</span><span>Embedded C</span><span>Firmware</span></div>
-      <div class="bom__row"><span>C4</span><span>KiCad</span><span>PCB Design</span></div>
-      <div class="bom__row"><span>C5</span><span>IoT Systems</span><span>Connectivity</span></div>
-      <div class="bom__row"><span>C6</span><span>GSM Comms</span><span>Connectivity</span></div>
-      <div class="bom__row"><span>C7</span><span>Python</span><span>Software</span></div>
-      <div class="bom__row"><span>C8</span><span>Robotics</span><span>Systems</span></div>
-      <div class="bom__row"><span>C9</span><span>EV Technology</span><span>Power Electronics</span></div>
-      <div class="bom__row"><span>C10</span><span>Prototyping</span><span>Hardware</span></div>
+<section class="section" id="about">
+  <div class="container section__grid">
+    <div class="section__heading">
+      <span class="section__number">01</span>
+      <h2>About</h2>
+    </div>
+    <div class="section__content">
+      <p class="lead">
+        I'm an Electrical and Electronics Engineering student specializing in
+        Smart Grid and Electric Vehicle systems.
+      </p>
+      <p>
+        I work at the intersection of physical hardware and intelligent control —
+        designing embedded firmware, custom PCBs, and the communication links that
+        let machines talk to each other. My focus spans embedded systems, IoT,
+        robotics, and the power electronics behind modern EVs.
+      </p>
     </div>
   </div>
 </section>
 
-<section class="sheet" id="projects">
-  <div class="container">
-    <div class="sheet__label"><span class="ref-tag">R3</span><h2>Featured Projects</h2></div>
-    <div class="project-grid">
-
-      <article class="card" tabindex="0">
-        <div class="card__pins" aria-hidden="true">
-          <span></span><span></span><span></span><span></span>
-        </div>
-        <div class="card__top">
-          <span class="ref-tag ref-tag--small">D1</span>
-          <span class="card__status">SHIPPED</span>
-        </div>
-        <h3>TerraFlow</h3>
-        <p>GSM-based smart irrigation system featuring ESP32 control, remote valve operation, and a custom-designed PCB.</p>
-        <a href="https://github.com/WFelixW/TerraFlow" target="_blank" rel="noopener">View Project →</a>
-      </article>
-
-      <article class="card" tabindex="0">
-        <div class="card__pins" aria-hidden="true">
-          <span></span><span></span><span></span><span></span>
-        </div>
-        <div class="card__top">
-          <span class="ref-tag ref-tag--small">D2</span>
-          <span class="card__status card__status--wip">IN PROGRESS</span>
-        </div>
-        <h3>Wall-E Robot</h3>
-        <p>Robotics platform with motion control, expressive animation, and planned AI integration.</p>
-        <a class="card__pending">Coming Soon</a>
-      </article>
-
-      <article class="card" tabindex="0">
-        <div class="card__pins" aria-hidden="true">
-          <span></span><span></span><span></span><span></span>
-        </div>
-        <div class="card__top">
-          <span class="ref-tag ref-tag--small">D3</span>
-          <span class="card__status card__status--wip">IN PROGRESS</span>
-        </div>
-        <h3>RoboEyes ESP32</h3>
-        <p>OLED-driven animated eye system for expressive robotic interfaces.</p>
-        <a class="card__pending">Coming Soon</a>
-      </article>
-
-      <article class="card" tabindex="0">
-        <div class="card__pins" aria-hidden="true">
-          <span></span><span></span><span></span><span></span>
-        </div>
-        <div class="card__top">
-          <span class="ref-tag ref-tag--small">D4</span>
-          <span class="card__status card__status--wip">IN PROGRESS</span>
-        </div>
-        <h3>V2V Communication</h3>
-        <p>Vehicle-to-Vehicle communication system designed for EV applications.</p>
-        <a class="card__pending">Coming Soon</a>
-      </article>
-
+<section class="section" id="skills">
+  <div class="container section__grid">
+    <div class="section__heading">
+      <span class="section__number">02</span>
+      <h2>Skills</h2>
+    </div>
+    <div class="section__content">
+      <div class="skill-list">
+        <div class="skill-list__item"><span>ESP32</span></div>
+        <div class="skill-list__item"><span>Arduino</span></div>
+        <div class="skill-list__item"><span>Embedded C</span></div>
+        <div class="skill-list__item"><span>PCB Design — KiCad</span></div>
+        <div class="skill-list__item"><span>IoT Systems</span></div>
+        <div class="skill-list__item"><span>GSM Communication</span></div>
+        <div class="skill-list__item"><span>Python</span></div>
+        <div class="skill-list__item"><span>Robotics</span></div>
+        <div class="skill-list__item"><span>EV Technology</span></div>
+        <div class="skill-list__item"><span>Electronics Prototyping</span></div>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="sheet" id="contact">
-  <div class="container">
-    <div class="sheet__label"><span class="ref-tag">J1</span><h2>Connector / Contact</h2></div>
-    <div class="connector">
-      <div class="connector__pin">
-        <span class="connector__pin-num">1</span>
-        <span class="connector__pin-name">GITHUB</span>
-        <a href="https://github.com/WFelixW" target="_blank" rel="noopener">github.com/WFelixW</a>
+<section class="section" id="projects">
+  <div class="container section__grid">
+    <div class="section__heading">
+      <span class="section__number">03</span>
+      <h2>Featured Projects</h2>
+    </div>
+    <div class="section__content">
+      <div class="project-grid">
+
+        <article class="project-card">
+          <div class="project-card__head">
+            <h3>TerraFlow</h3>
+            <span class="badge badge--live">Shipped</span>
+          </div>
+          <p>GSM-based smart irrigation system featuring ESP32 control, remote valve operation, and a custom-designed PCB.</p>
+          <div class="project-card__tags">
+            <span>ESP32</span><span>GSM</span><span>PCB</span>
+          </div>
+          <a href="https://github.com/WFelixW/TerraFlow" target="_blank" rel="noopener" class="project-card__link">
+            View Project <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__head">
+            <h3>Wall-E Robot</h3>
+            <span class="badge">In Progress</span>
+          </div>
+          <p>Robotics platform with motion control, expressive animation, and planned AI integration.</p>
+          <div class="project-card__tags">
+            <span>Robotics</span><span>Motion Control</span>
+          </div>
+          <span class="project-card__link project-card__link--disabled">Coming Soon</span>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__head">
+            <h3>RoboEyes ESP32</h3>
+            <span class="badge">In Progress</span>
+          </div>
+          <p>OLED-driven animated eye system for expressive robotic interfaces.</p>
+          <div class="project-card__tags">
+            <span>ESP32</span><span>OLED</span>
+          </div>
+          <span class="project-card__link project-card__link--disabled">Coming Soon</span>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__head">
+            <h3>V2V Communication</h3>
+            <span class="badge">In Progress</span>
+          </div>
+          <p>Vehicle-to-Vehicle communication system designed for EV applications.</p>
+          <div class="project-card__tags">
+            <span>EV Tech</span><span>Comms</span>
+          </div>
+          <span class="project-card__link project-card__link--disabled">Coming Soon</span>
+        </article>
+
       </div>
-      <div class="connector__pin">
-        <span class="connector__pin-num">2</span>
-        <span class="connector__pin-name">PORTFOLIO</span>
-        <a href="https://wfelixw.github.io" target="_blank" rel="noopener">wfelixw.github.io</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="container section__grid">
+    <div class="section__heading">
+      <span class="section__number">04</span>
+      <h2>Contact</h2>
+    </div>
+    <div class="section__content">
+      <p class="lead">Let's talk about hardware, firmware, or where the two meet.</p>
+      <div class="contact-list">
+        <a href="https://github.com/WFelixW" target="_blank" rel="noopener" class="contact-list__item">
+          <span class="contact-list__label">GitHub</span>
+          <span class="contact-list__value">github.com/WFelixW <span aria-hidden="true">→</span></span>
+        </a>
+        <a href="https://wfelixw.github.io" target="_blank" rel="noopener" class="contact-list__item">
+          <span class="contact-list__label">Portfolio</span>
+          <span class="contact-list__value">wfelixw.github.io <span aria-hidden="true">→</span></span>
+        </a>
       </div>
     </div>
   </div>
@@ -167,8 +190,9 @@
 </main>
 
 <footer>
-  <div class="container">
-    <p>© 2026 Felix — Engineering Portfolio — Sheet 1 of 1</p>
+  <div class="container footer__inner">
+    <p>© 2026 Felix</p>
+    <p>Engineering Portfolio</p>
   </div>
 </footer>
 
